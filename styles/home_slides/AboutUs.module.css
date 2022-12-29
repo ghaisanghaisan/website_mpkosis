@@ -1,0 +1,42 @@
+.aboutus {
+	width: 100%;
+	height: 120vh;
+	background: linear-gradient(180.59deg, #a62e2e 30.59%, #bd412b 81.8%);
+
+	padding-top: var(--title-padding-top);
+	padding-bottom: 5em;
+}
+
+.content {
+	height: 100%;
+	padding: 0 4em;
+	display: flex;
+	align-items: center;
+
+	gap: 6em;
+}
+
+.content > p {
+	width: 100%;
+	font-weight: 400;
+	font-size: var(--large-text);
+	line-height: 44px;
+	color: white;
+}
+
+.logo {
+	width: calc(var(--logo-size) * 2.8);
+	height: calc(var(--logo-size) * 2.8);
+	height: auto;
+}
+
+@media only screen and (max-width: 1078px) {
+	.logo {
+		display: none;
+	}
+
+	.content > p {
+		font-size: calc(var(--large-text) + 8px);
+		text-align: center;
+	}
+}

@@ -1,0 +1,16 @@
+.customindicator {
+	position: relative;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 1px solid var(--contrast);
+	display: inline-block;
+	margin: 1em 8px;
+	z-index: 1;
+
+	cursor: pointer;
+}
+
+.active {
+	background-color: var(--contrast);
+}

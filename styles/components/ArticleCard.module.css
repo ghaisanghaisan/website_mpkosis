@@ -1,0 +1,46 @@
+.ArticleCard {
+	width: 558px;
+	height: 585px;
+	background-color: var(--primary);
+	border-radius: 12px;
+	box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.ArticleCard:hover > .articleimage {
+	filter: brightness(0.9);
+}
+
+.articleimage {
+	height: 100%;
+	overflow: hidden;
+}
+
+.articleimage > img {
+	width: auto;
+	height: 100%;
+}
+
+.articlelabel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 180px;
+	background-color: var(--primary);
+	padding: 1em 2em;
+}
+
+.articlelabel > h1 {
+	color: var(--contrast);
+	font-size: var(--medium-text);
+}
+
+.articlelabel > small {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: calc(var(--small-text) - 2);
+	font-weight: 700;
+}

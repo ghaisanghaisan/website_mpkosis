@@ -1,0 +1,77 @@
+.OurStuff {
+	width: 100%;
+	height: 100%;
+	padding-top: var(--title-padding-top);
+	padding-bottom: 3em;
+}
+
+.gridcontainer {
+	margin-top: 3em;
+	width: 100%;
+	display: grid;
+	column-gap: var(--page-x-margin);
+	row-gap: 1.5em;
+
+	grid-template-columns: 50% 50%;
+	justify-content: center;
+}
+
+.prokercard {
+	position: relative;
+	/* background: var(--primary); */
+	border-radius: 0.75em;
+	width: 100%;
+	height: 280px;
+	overflow: hidden;
+
+	transition: 100ms ease-out;
+}
+
+.prokercard:hover {
+	scale: 1.005;
+}
+
+.prokerlabel {
+	position: absolute;
+	background: linear-gradient(270deg, #a62e2e 50%, rgba(189, 65, 43, 0) 73.29%);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+.prokerinfo {
+	position: absolute;
+	padding: 1em;
+	right: 0;
+	width: 50%;
+	text-align: center;
+}
+
+.prokerinfo > h1 {
+	color: white;
+	font-size: var(--large-text);
+	font-weight: 700;
+}
+
+.prokerinfo > p {
+	color: white;
+	margin-top: 1em;
+	font-size: calc(var(--small-text) - 1px);
+	font-weight: 300;
+}
+
+.image {
+	width: 60%;
+	height: auto;
+}
+
+@media only screen and (max-width: 1078px) {
+	.prokerinfo {
+		width: 60%;
+	}
+	.image {
+		height: 100%;
+		width: auto;
+	}
+}
