@@ -1,12 +1,10 @@
 import AboutUs from "@components/home_slides/AboutUs";
-import Collaborate from "@components/Footer";
 import Gallery from "@components/home_slides/Gallery";
 import Hero from "@components/home_slides/Hero";
 import OurStuff from "@components/home_slides/OurStuff";
 import ReadArticles from "@components/home_slides/ReadArticles";
 import WhoWeAre from "@components/home_slides/WhoWeAre";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { GraphQLClient, gql } from "graphql-request";
 import Footer from "@components/Footer";

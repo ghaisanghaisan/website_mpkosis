@@ -1,8 +1,6 @@
 import React from "react";
-import { useRouter } from "next/router";
 import { GraphQLClient, gql } from "graphql-request";
 import styles from "@styles/ArticlePage.module.css";
-import nadi from "@public/IMG_9683.JPG";
 import Image from "next/image";
 import ArticleCard from "@components/ArticleCard";
 

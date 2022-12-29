@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "@styles/Articles.module.css";
-import nadi from "@public/IMG_9683.jpg";
 import ArticleCard from "@components/ArticleCard";
 import { GraphQLClient, gql } from "graphql-request";
 
