@@ -1,15 +1,15 @@
 import AboutUs from "@components/home_slides/AboutUs";
-import Collaborate from "@components/home_slides/Collaborate";
+import Collaborate from "@components/Footer";
 import Gallery from "@components/home_slides/Gallery";
 import Hero from "@components/home_slides/Hero";
 import OurStuff from "@components/home_slides/OurStuff";
 import ReadArticles from "@components/home_slides/ReadArticles";
 import WhoWeAre from "@components/home_slides/WhoWeAre";
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { GraphQLClient, gql } from "graphql-request";
+import Footer from "@components/Footer";
 
 const graphcms = new GraphQLClient(
 	"https://api-ap-southeast-2.hygraph.com/v2/clbyicmkv0fgv01urddld1niq/master"
@@ -61,10 +61,9 @@ export default function Home({ articles, heroArticles }) {
 				<OurStuff />
 				<ReadArticles articles={articles} />
 				<Gallery />
-				<Collaborate />
 			</main>
 
-			<footer className={styles.footer}></footer>
+			<Footer />
 		</div>
 	);
 }

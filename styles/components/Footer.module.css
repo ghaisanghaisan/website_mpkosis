@@ -1,0 +1,69 @@
+.Collaborate {
+	background: linear-gradient(249.49deg, #a62e2e 8.29%, #bd412b 77.67%);
+
+	min-height: 80vh;
+	width: 100%;
+
+	padding-top: var(--title-padding-top);
+	padding-bottom: 3em;
+	color: white;
+}
+
+.flexWrapper {
+	margin-top: 6em;
+	gap: 6em;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contactscontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contactcard {
+	margin-top: 4em;
+	background-color: #06c755;
+	padding: 0 1em;
+	height: 100px;
+	width: 380px;
+	border-radius: 12px;
+	overflow: hidden;
+
+	display: flex;
+}
+
+.logo {
+	height: 100%;
+	width: auto;
+}
+
+.contactinfo {
+	padding: 0.5em 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: white;
+	font-size: calc(var(--small-text) - 1px);
+	font-weight: 600;
+}
+
+.locationContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.locationMap {
+	margin-top: 2em;
+	height: 300px;
+	width: 300px;
+}
+
+@media only screen and (max-width: 1078px) {
+	.flexWrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+}

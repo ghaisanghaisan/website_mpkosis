@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "@styles/home_slides/Hero.module.css";
 import ImageCarousel from "@components/ImageCarousel";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero({ heroArticles }) {
 	const [currentArticle, setCurrentArticle] = useState(heroArticles[0]);
@@ -19,9 +20,12 @@ export default function Hero({ heroArticles }) {
 						return (
 							<Link href={`/articles/${article.slug}`} key={article.id}>
 								<div className={styles.herocrop}>
-									<img
+									<Image
 										src={article.coverPhoto.url}
 										className={styles.heroimage}
+										alt=""
+										height="1080"
+										width="1920"
 									/>
 								</div>
 							</Link>

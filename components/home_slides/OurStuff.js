@@ -1,14 +1,23 @@
 import React from "react";
 import styles from "@styles/home_slides/OurStuff.module.css";
-import logo from "@public/Logo 55FM.jpg";
+import logo55fm from "@public/Logo 55FM.jpg";
+import logoIG from "@public/logoIG.png";
+import logoYoutube from "@public/logoYoutube.png";
 import Image from "next/image";
 import Link from "next/link";
 
-function ProkerCard({ img, title, description, link }) {
+function ProkerCard({ offset, img, title, description, link }) {
 	return (
 		<Link href={link}>
 			<div className={styles.prokercard}>
-				<Image src={img} className={styles.image} />
+				<Image
+					src={img}
+					className={styles.image}
+					alt={`Logo untuk ${title}`}
+					style={{
+						transform: `translate(${offset})`,
+					}}
+				/>
 
 				<div className={styles.prokerlabel}>
 					<div className={styles.prokerinfo}>
@@ -30,29 +39,24 @@ export default function OurStuff() {
 
 					<div className={styles.gridcontainer}>
 						<ProkerCard
-							img={logo}
+							img={logo55fm}
 							title="55FM"
 							description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis"
 							link="https://www.youtube.com/"
 						/>
 						<ProkerCard
-							img={logo}
+							img={logoIG}
 							title="Instagram"
 							description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis"
 							link="https://www.youtube.com/"
 						/>
 						<ProkerCard
-							img={logo}
+							img={logoYoutube}
 							title="Youtube"
 							description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis"
 							link="https://www.youtube.com/"
 						/>
-						<ProkerCard
-							img={logo}
-							title="SCOPELLA"
-							description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis"
-							link="https://www.youtube.com/"
-						/>
+						<ProkerCard link="#" />
 					</div>
 				</div>
 			</div>

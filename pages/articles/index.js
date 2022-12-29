@@ -40,6 +40,7 @@ export default function ArticlesPage({ articles }) {
 				<div className={styles.articleGrid}>
 					{articles.map((article) => (
 						<ArticleCard
+							key={article.id}
 							img={article.coverPhoto.url}
 							title={article.title}
 							date={article.datePublished}

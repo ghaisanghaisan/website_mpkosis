@@ -21,6 +21,7 @@ export default function AboutUs() {
 							className={styles.logo}
 							data-aos="zoom-out"
 							data-aos-duration="600"
+							alt="Logo MPKOSIS55"
 						/>
 					</div>
 				</div>
