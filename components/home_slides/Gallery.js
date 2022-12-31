@@ -23,6 +23,7 @@ export default function Gallery({ galleryPhotos }) {
 							}
 							return (
 								<GalleryPhoto
+									key={photo.id}
 									img={photo.thumbnailLink}
 									link={photo.webViewLink}
 								/>

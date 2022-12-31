@@ -12,7 +12,7 @@ const drive = google.drive({ version: "v3", auth });
 export default function handler(request, response) {
 	drive.files.list(
 		{
-			fields: "files(name, thumbnailLink, mimeType, webViewLink)",
+			fields: "files(id, name, thumbnailLink, mimeType, webViewLink)",
 			pageSize: "50",
 		},
 		(err, res) => {
