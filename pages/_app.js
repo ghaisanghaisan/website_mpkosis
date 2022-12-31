@@ -32,9 +32,9 @@ function MyApp({ Component, pageProps }) {
 				<li>
 					<Link href="/structure/">Struktur</Link>
 				</li>
-				<li>
+				{/* <li>
 					<Link href="/calender/">Kalender</Link>
-				</li>
+				</li> */}
 			</Navbar>
 			<Component {...pageProps} />
 		</>

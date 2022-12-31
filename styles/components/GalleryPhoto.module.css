@@ -1,0 +1,26 @@
+.galleryPhoto {
+	height: 200px;
+	aspect-ratio: 1;
+	background-color: #d9d9d9;
+}
+.image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+@media only screen and (max-width: 700px) {
+	.galleryPhoto {
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.galleryPhoto {
+		height: 100px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.galleryPhoto {
+		height: 80px;
+	}
+}

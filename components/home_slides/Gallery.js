@@ -1,17 +1,7 @@
 import React from "react";
 import styles from "@styles/home_slides/Gallery.module.css";
 import Link from "next/link";
-import Image from "next/image";
-
-function GalleryPhoto({ img, link }) {
-	return (
-		<div className={styles.galleryPhoto}>
-			<a href={link} target="_blank" rel="noreferrer noopener">
-				<Image src={img} className={styles.image} height="1080" width="1920" />
-			</a>
-		</div>
-	);
-}
+import GalleryPhoto from "@components/GalleryPhoto";
 
 export default function Gallery({ galleryPhotos }) {
 	return (
