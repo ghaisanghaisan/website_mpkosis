@@ -3,9 +3,8 @@ import styles from "@styles/Gallery.module.css";
 import GalleryPhoto from "@components/GalleryPhoto";
 
 export async function getStaticProps() {
-	const gallery = await fetch("http://localhost:3000/api/galleryview").then(
-		(res) => res.json()
-	);
+	const res = await fetch("http://localhost:3000/api/galleryview");
+	const gallery = await res.json();
 	return {
 		props: {
 			galleryPhotos: gallery.files,

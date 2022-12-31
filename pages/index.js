@@ -35,9 +35,8 @@ export async function getStaticProps() {
 	const { articles } = await graphcms.request(QUERY);
 	const heroArticles = articles.filter((article) => article.showOnHero);
 
-	const gallery = await fetch("http://localhost:3000/api/galleryview").then(
-		(res) => res.json()
-	);
+	const res = await fetch("http://localhost:3000/api/galleryview");
+	const gallery = await res.json();
 	return {
 		props: {
 			articles,
