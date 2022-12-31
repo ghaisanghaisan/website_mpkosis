@@ -1,5 +1,5 @@
 .Collaborate {
-	background: linear-gradient(249.49deg, #a62e2e 8.29%, #bd412b 77.67%);
+	background: linear-gradient(180.59deg, #a62e2e 30.59%, #bd412b 81.8%);
 
 	min-height: 80vh;
 	width: 100%;
@@ -22,12 +22,17 @@
 	align-items: center;
 }
 
+.contactscontainer > h2 {
+	text-align: center;
+	font-size: var(--medium-text);
+}
+
 .contactcard {
 	margin-top: 4em;
 	background-color: #06c755;
 	padding: 0 1em;
 	height: 100px;
-	width: 380px;
+	width: 90%;
 	border-radius: 12px;
 	overflow: hidden;
 
@@ -58,12 +63,21 @@
 .locationMap {
 	margin-top: 2em;
 	height: 300px;
-	width: 300px;
+	width: 100%;
 }
 
 @media only screen and (max-width: 1078px) {
 	.flexWrapper {
 		flex-direction: column;
 		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.contactscontainer > h2 {
+		font-size: 18px;
+	}
+	.contactinfo {
+		font-size: 14px;
 	}
 }

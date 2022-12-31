@@ -13,22 +13,21 @@ export default function Hero({ heroArticles }) {
 
 	return (
 		<div className="page-slides">
-			{/* TODO: IMAGE CAROUSEL, BACKEND IMAGEFORMATTING, FIX WAVE RESPONSIVE */}
 			<div className={styles.hero}>
 				<ImageCarousel onChange={handleChange}>
 					{heroArticles.map((article) => {
 						return (
-							<Link href={`/articles/${article.slug}`} key={article.id}>
-								<div className={styles.herocrop}>
-									<Image
-										src={article.coverPhoto.url}
-										className={styles.heroimage}
-										alt=""
-										height="1080"
-										width="1920"
-									/>
-								</div>
-							</Link>
+							// <Link href={`/articles/${article.slug}`} key={article.id}>
+							<div key={article.id} className={styles.herocrop}>
+								<Image
+									src={article.coverPhoto.url}
+									className={styles.heroimage}
+									alt=""
+									height="1080"
+									width="1920"
+								/>
+							</div>
+							// </Link>
 						);
 					})}
 				</ImageCarousel>
@@ -38,12 +37,12 @@ export default function Hero({ heroArticles }) {
 					data-aos-offset="0">
 					{currentArticle.secondaryTitle}
 				</h1>
-				<Link href={`/articles/${currentArticle.slug}`}>
+				{/* <Link href={`/articles/${currentArticle.slug}`}>
 					<div className={styles.learnbtn}>Learn More</div>
-				</Link>
+				</Link> */}
 
 				<svg
-					className={styles.wave}
+					className="wave"
 					id="visual"
 					viewBox="0 0 900 600"
 					xmlns="http://www.w3.org/2000/svg"

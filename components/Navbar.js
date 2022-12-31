@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styles from "@styles/Navbar.module.css";
 import argalogo from "../public/Argasatya_Transparent.png";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
 import Link from "next/link";
 
 export default function Navbar({ children }) {
@@ -20,7 +20,16 @@ export default function Navbar({ children }) {
 						<Image src={argalogo} className={styles.logo} />
 					</Link>
 					<div className={styles.togglemenu}>
-						{open ? <ul className={styles.navlinks}>{children}</ul> : ""}
+						<ul
+							className={` ${styles.navlinks}`}
+							style={{
+								transform: open ? "translate(-100%)" : "translate(0)",
+							}}>
+							<MdClose className={styles.closebtn} onClick={handleClick} />
+							<h1>MPK OSIS 55</h1>
+
+							{children}
+						</ul>
 						<MdMenu className={styles.menuicon} onClick={handleClick} />
 					</div>
 				</div>

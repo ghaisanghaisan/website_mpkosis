@@ -23,9 +23,9 @@ function MyApp({ Component, pageProps }) {
 				<li>
 					<Link href="/">Home</Link>
 				</li>
-				<li>
+				{/* <li>
 					<Link href="/articles/">Artikel</Link>
-				</li>
+				</li> */}
 				<li>
 					<Link href="/gallery/">Galeri</Link>
 				</li>

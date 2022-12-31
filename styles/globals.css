@@ -64,6 +64,18 @@ a {
 	color: var(--primary);
 }
 
+#right {
+	right: 0;
+}
+
+.wave {
+	position: absolute;
+	bottom: 0;
+	fill: var(--primary);
+	z-index: 0;
+	pointer-events: none;
+}
+
 @media only screen and (max-width: 1280px) {
 	* {
 		--hero-title-text: 76px;
@@ -103,12 +115,53 @@ a {
 	}
 }
 
+@media only screen and (max-width: 630px) {
+	* {
+		--medium-text: 16px;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	* {
 		--hero-title-text: 50px;
 		--title-text: 36px;
 		--large-text: 20px;
-		--medium-text: 18px;
 		--logo-size: 80px;
+		--small-text: 12px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	* {
+		--large-text: 16px;
+		--medium-text: 14px;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	* {
+		--hero-title-text: 42px;
+		--large-text: 12px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	* {
+		--hero-title-text: 38px;
+		--title-text: 32px;
+		--small-text: 10px;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	* {
+		--medium-text: 10px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	* {
+		--hero-title-text: 34px;
+		--small-text: 8px;
 	}
 }

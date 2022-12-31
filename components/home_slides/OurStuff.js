@@ -37,26 +37,28 @@ export default function OurStuff() {
 				<div className="container">
 					<h1 className="title colorPrimary">Program Kerja Kami</h1>
 
-					<div className={styles.gridcontainer}>
+					<div className={styles.prokercontainer}>
 						<ProkerCard
 							img={logo55fm}
 							title="55FM"
-							description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis"
+							description="Podcastnya anak anak Petrol. Konten penuh edukasi dan juga canda tawa!"
 							link="https://www.youtube.com/"
 						/>
 						<ProkerCard
 							img={logoIG}
 							title="Instagram"
-							description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis"
+							description="Instagram official MPK OSIS dari SMAN 55 Jakarta, dokumentasi, informasi penting, dan lain lain!"
 							link="https://www.youtube.com/"
 						/>
 						<ProkerCard
 							img={logoYoutube}
 							title="Youtube"
-							description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis"
+							description="Channel Youtube official MPK OSIS dari SMAN 55 Jakarta."
 							link="https://www.youtube.com/"
 						/>
-						<ProkerCard link="#" />
+						<div className={styles.placeholder}>
+							<h1>COMING SOON !</h1>
+						</div>
 					</div>
 				</div>
 			</div>

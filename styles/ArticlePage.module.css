@@ -63,3 +63,16 @@
 	height: 290px;
 	overflow: hidden;
 }
+
+@media only screen and (max-width: 1078px) {
+	.article {
+		grid-area: 1 / 1 / 2 / 9;
+	}
+
+	.gridContainer {
+		column-gap: 0;
+	}
+	.recommendedArticles {
+		display: none;
+	}
+}

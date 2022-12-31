@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@styles/components/ImageCarousel.module.css";
 import { Carousel } from "react-responsive-carousel";
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 
 function customIndicator(onClickHandler, isSelected, index, label) {
 	if (isSelected) {
@@ -27,6 +28,22 @@ function customIndicator(onClickHandler, isSelected, index, label) {
 	);
 }
 
+function customArrowPrev(onClickHandler, therePrevItem) {
+	return (
+		<div className={styles.arrow} onClick={onClickHandler} id="left">
+			<AiFillCaretLeft />
+		</div>
+	);
+}
+
+function customArrowNext(onClickHandler, thereNextItem) {
+	return (
+		<div className={styles.arrow} onClick={onClickHandler} id="right">
+			<AiFillCaretRight />
+		</div>
+	);
+}
+
 export default function ImageCarousel({ children, onChange }) {
 	return (
 		<Carousel
@@ -37,7 +54,9 @@ export default function ImageCarousel({ children, onChange }) {
 			showIndicators
 			showStatus={false}
 			onChange={onChange}
-			renderIndicator={customIndicator}>
+			renderIndicator={customIndicator}
+			renderArrowPrev={customArrowPrev}
+			renderArrowNext={customArrowNext}>
 			{children}
 		</Carousel>
 	);

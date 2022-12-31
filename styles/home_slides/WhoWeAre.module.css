@@ -12,6 +12,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	gap: 2em;
 }
 
 .personcard {
@@ -80,7 +81,42 @@
 @media only screen and (max-width: 900px) {
 	.content {
 		flex-wrap: wrap;
-		justify-content: center;
-		gap: 4em;
+		justify-content: space-evenly;
+	}
+}
+
+@media only screen and (max-width: 630px) {
+	.content {
+		gap: 2em;
+	}
+	.image {
+		--image-size: 200px;
+	}
+
+	.personcard h1 {
+		margin-top: 1em;
+	}
+
+	.personcard p {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.image {
+		--image-size: 150px;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.content {
+		gap: 2em;
+	}
+	.image {
+		--image-size: 120px;
+	}
+
+	.btncta {
+		padding: 0.25em 1em;
 	}
 }

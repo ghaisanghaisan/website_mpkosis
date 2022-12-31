@@ -9,7 +9,9 @@ export default function ReadArticles({ articles }) {
 			<div className={styles.ReadArticles}>
 				<div className="container">
 					<h1 className="title colorPrimary	">Baca Artikel Kami</h1>
-
+					<div className={styles.footer}>
+						<Link href="/articles/">See All...</Link>
+					</div>
 					<div className={styles.slideshow}>
 						{articles.map((article) => (
 							<ArticleCard
@@ -20,9 +22,6 @@ export default function ReadArticles({ articles }) {
 								slug={article.slug}
 							/>
 						))}
-					</div>
-					<div className={styles.footer}>
-						<Link href="/articles/">See All...</Link>
 					</div>
 				</div>
 			</div>

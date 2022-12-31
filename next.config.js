@@ -22,6 +22,13 @@ module.exports = {
 				port: "",
 				pathname: "/**",
 			},
+
+			{
+				protocol: "https",
+				hostname: "lh[1-6].googleusercontent.com",
+				port: "",
+				pathname: "/**",
+			},
 		],
 	},
 };

@@ -8,18 +8,13 @@
 .herotitle {
 	color: white;
 	left: 1em;
-	bottom: 1em;
+	bottom: 0.5em;
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	font-weight: 700;
 	font-size: var(--hero-title-text);
-}
 
-.wave {
-	position: absolute;
-	bottom: 0;
-	fill: var(--primary);
-	z-index: 0;
+	text-transform: uppercase;
 }
 
 .herocrop {
@@ -29,8 +24,9 @@
 
 .heroimage {
 	position: relative;
+	object-fit: cover;
+	height: 100%;
 	width: 100%;
-	height: auto;
 	filter: brightness(70%);
 	z-index: -1;
 }
@@ -56,15 +52,12 @@
 	color: white;
 }
 
-@media only screen and (max-width: 1078px) {
-	.heroimage {
-		object-fit: cover;
-		height: 100%;
-		width: 100%;
-	}
-}
-
 @media only screen and (max-width: 768px) {
+	.herotitle {
+		left: auto;
+		right: 0.5em;
+		bottom: 0.25em;
+	}
 	.learnbtn {
 		display: none;
 	}

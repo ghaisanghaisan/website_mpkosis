@@ -40,3 +40,11 @@
 		text-align: center;
 	}
 }
+
+@media only screen and (max-width: 500px) {
+	.content {
+		align-items: flex-start;
+		margin-top: 6em;
+		padding: 0 1em;
+	}
+}
