@@ -8,6 +8,7 @@ import Head from "next/head";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { GraphQLClient, gql } from "graphql-request";
 import Footer from "@components/Footer";
+import { useState, useEffect } from "react";
 
 const graphcms = new GraphQLClient(
 	"https://api-ap-southeast-2.hygraph.com/v2/clbyicmkv0fgv01urddld1niq/master"
@@ -35,18 +36,23 @@ export async function getStaticProps() {
 	const { articles } = await graphcms.request(QUERY);
 	const heroArticles = articles.filter((article) => article.showOnHero);
 
-	const res = await fetch("http://localhost:3000/api/galleryview");
-	const gallery = await res.json();
 	return {
 		props: {
 			articles,
 			heroArticles,
-			galleryPhotos: gallery.files,
 		},
 		revalidate: 10,
 	};
 }
-export default function Home({ articles, heroArticles, galleryPhotos }) {
+export default function Home({ articles, heroArticles }) {
+	const [galleryPhotos, setgalleryPhotos] = useState([]);
+
+	useEffect(() => {
+		fetch("http://localhost:3000/api/galleryview")
+			.then((res) => res.json())
+			.then((data) => setgalleryPhotos(data.files));
+	});
+
 	return (
 		<div>
 			<Head>
