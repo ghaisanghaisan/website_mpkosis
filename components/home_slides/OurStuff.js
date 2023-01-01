@@ -4,7 +4,6 @@ import logo55fm from "@public/Logo 55FM.jpg";
 import logoIG from "@public/logoIG.png";
 import logoYoutube from "@public/logoYoutube.png";
 import Image from "next/image";
-import Link from "next/link";
 
 function ProkerCard({ offset, img, title, description, link }) {
 	return (
