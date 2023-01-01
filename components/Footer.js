@@ -9,14 +9,22 @@ function Contacts() {
 		<div className={styles.contactscontainer}>
 			<h2>Email: mpkosis.sman55@gmail.com</h2>
 			<div className={styles.contactcard}>
-				<Image src={linelogo} className={styles.logo} />
+				<Image
+					src={linelogo}
+					className={styles.logo}
+					alt="logo of the app line"
+				/>
 				<div className={styles.contactinfo}>
 					<div>CP: Ra&apos;fi Za&apos;dan </div>
 					<div>ID:</div>
 				</div>
 			</div>
 			<div className={styles.contactcard}>
-				<Image src={linelogo} className={styles.logo} />
+				<Image
+					src={linelogo}
+					className={styles.logo}
+					alt="logo of the app line"
+				/>
 				<div className={styles.contactinfo}>
 					<div>CP: Ramelya Ramadany </div>
 					<div>ID:</div>

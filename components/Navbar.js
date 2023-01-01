@@ -17,7 +17,11 @@ export default function Navbar({ children }) {
 			<div className="container">
 				<div className={styles.nav}>
 					<Link href="/">
-						<Image src={argalogo} className={styles.logo} />
+						<Image
+							src={argalogo}
+							className={styles.logo}
+							alt="Logo Argasatya Narutala"
+						/>
 					</Link>
 					<div className={styles.togglemenu}>
 						<ul
