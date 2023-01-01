@@ -51,7 +51,7 @@ export default function Home({ articles, heroArticles }) {
 		fetch("http://localhost:3000/api/galleryview")
 			.then((res) => res.json())
 			.then((data) => setgalleryPhotos(data.files));
-	});
+	}, []);
 
 	return (
 		<div>

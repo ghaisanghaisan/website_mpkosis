@@ -1,18 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@styles/Gallery.module.css";
 import GalleryPhoto from "@components/GalleryPhoto";
 
-export async function getStaticProps() {
-	const res = await fetch("http://localhost:3000/api/galleryview");
-	const gallery = await res.json();
-	return {
-		props: {
-			galleryPhotos: gallery.files,
-		},
-		revalidate: 10,
-	};
-}
-export default function GalleryPage({ galleryPhotos }) {
+export default function GalleryPage() {
+	const [galleryPhotos, setgalleryPhotos] = useState([]);
+
+	useEffect(() => {
+		fetch("http://localhost:3000/api/galleryview")
+			.then((res) => res.json())
+			.then((data) => setgalleryPhotos(data.files));
+	}, []);
+
 	return (
 		<div className={styles.galleryPage}>
 			<div className="container">
