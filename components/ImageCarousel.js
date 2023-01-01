@@ -49,7 +49,6 @@ export default function ImageCarousel({ children, onChange }) {
 		<Carousel
 			infiniteLoop
 			stopOnHover
-			swipeable
 			showArrows
 			showIndicators
 			showStatus={false}
