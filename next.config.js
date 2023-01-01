@@ -6,7 +6,7 @@ const nextConfig = {
 			{
 				protocol: "https",
 				hostname: "media.graphassets.com",
-				port: "",
+				port: " ",
 				pathname: "/",
 			},
 		],
@@ -19,14 +19,12 @@ module.exports = {
 			{
 				protocol: "https",
 				hostname: "media.graphassets.com",
-				port: "",
 				pathname: "/**",
 			},
 
 			{
 				protocol: "https",
 				hostname: "lh[1-6].googleusercontent.com",
-				port: "",
 				pathname: "/**",
 			},
 		],

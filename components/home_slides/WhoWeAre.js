@@ -10,7 +10,7 @@ import wakilketuaosis from "@public/foto-anggota/1.Ketos-waketos/wakil-ketua-osi
 function PersonCard({ position, name, image }) {
 	return (
 		<div className={styles.personcard}>
-			<Image className={styles.image} src={image} />
+			<Image className={styles.image} src={image} alt={`photo of ${name}`} />
 			<h1>{position}</h1>
 			<p>{name}</p>
 		</div>

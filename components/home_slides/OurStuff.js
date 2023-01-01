@@ -17,6 +17,7 @@ function ProkerCard({ offset, img, title, description, link }) {
 					style={{
 						transform: `translate(${offset})`,
 					}}
+					rel="noreferrer noopener"
 				/>
 
 				<div className={styles.prokerlabel}>
