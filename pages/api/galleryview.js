@@ -1,10 +1,9 @@
 const { google } = require("googleapis");
-const credentials = require("../credentials.json");
 const scopes = ["https://www.googleapis.com/auth/drive"];
 const auth = new google.auth.JWT(
-	process.env.GOOGLE_CLIENT_EMAIL,
+	process.env.google_client_email,
 	null,
-	process.env.GOOGLE_PRIVATE_KEY,
+	process.env.google_private_key,
 	scopes
 );
 const drive = google.drive({ version: "v3", auth });

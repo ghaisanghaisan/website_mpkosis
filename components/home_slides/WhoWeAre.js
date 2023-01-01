@@ -1,11 +1,16 @@
 import React from "react";
 import styles from "@styles/home_slides/WhoWeAre.module.css";
 import Link from "next/link";
+import Image from "next/image";
+
+import ketuampk from "@public/foto-anggota/1.Ketua-MPK/ketua-mpk-1.jpeg";
+import ketuaosis from "@public/foto-anggota/1.Ketos-waketos/ketua-osis.jpg";
+import wakilketuaosis from "@public/foto-anggota/1.Ketos-waketos/wakil-ketua-osis.jpg";
 
 function PersonCard({ position, name, image }) {
 	return (
 		<div className={styles.personcard}>
-			<div className={styles.image}></div>
+			<Image className={styles.image} src={image} />
 			<h1>{position}</h1>
 			<p>{name}</p>
 		</div>
@@ -21,9 +26,21 @@ export default function WhoWeAre() {
 						className={styles.content}
 						data-aos="fade-in"
 						data-aos-offset="300">
-						<PersonCard position="KETUA OSIS" name="Muhammad Akio Zaiko" />
-						<PersonCard position="WAKIL KETUA OSIS" name="Jossy Zefanya" />
-						<PersonCard position="KETUA MPK" name="Anastasia Shifa Abigail" />
+						<PersonCard
+							position="KETUA OSIS"
+							name="Muhammad Akio Zaiko"
+							image={ketuaosis}
+						/>
+						<PersonCard
+							position="WAKIL KETUA OSIS"
+							name="Jossy Zefanya"
+							image={wakilketuaosis}
+						/>
+						<PersonCard
+							position="KETUA MPK"
+							name="Anastasia Shifa Abigail"
+							image={ketuampk}
+						/>
 					</div>
 
 					<p

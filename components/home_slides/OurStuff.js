@@ -8,7 +8,7 @@ import Link from "next/link";
 
 function ProkerCard({ offset, img, title, description, link }) {
 	return (
-		<Link href={link}>
+		<a href={link} target="_blank">
 			<div className={styles.prokercard}>
 				<Image
 					src={img}
@@ -26,7 +26,7 @@ function ProkerCard({ offset, img, title, description, link }) {
 					</div>
 				</div>
 			</div>
-		</Link>
+		</a>
 	);
 }
 
@@ -42,19 +42,19 @@ export default function OurStuff() {
 							img={logo55fm}
 							title="55FM"
 							description="Podcastnya anak anak Petrol. Konten penuh edukasi dan juga canda tawa!"
-							link="https://www.youtube.com/"
+							link="https://open.spotify.com/show/16veMVSDpn3F6X0TCu3qnG?si=18addfaf8e3045a3"
 						/>
 						<ProkerCard
 							img={logoIG}
 							title="Instagram"
 							description="Instagram official MPK OSIS dari SMAN 55 Jakarta, dokumentasi, informasi penting, dan lain lain!"
-							link="https://www.youtube.com/"
+							link="https://www.instagram.com/mpkosis55//"
 						/>
 						<ProkerCard
 							img={logoYoutube}
 							title="Youtube"
 							description="Channel Youtube official MPK OSIS dari SMAN 55 Jakarta."
-							link="https://www.youtube.com/"
+							link="https://www.youtube.com/@MPKOSISSMAN55Jakarta"
 						/>
 						<div className={styles.placeholder}>
 							<h1>COMING SOON !</h1>

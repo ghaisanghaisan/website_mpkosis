@@ -41,8 +41,8 @@
 	width: var(--image-size);
 	height: var(--image-size);
 
-	background-color: black;
 	border-radius: 50%;
+	object-fit: cover;
 }
 
 .invitetext {
