@@ -38,7 +38,7 @@ export default function WhoWeAre() {
 						/>
 						<PersonCard
 							position="KETUA MPK"
-							name="Anastasia Shifa Abigail"
+							name="Anastasia Shifa Abigeil"
 							image={ketuampk}
 						/>
 					</div>
