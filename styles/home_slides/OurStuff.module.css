@@ -57,7 +57,7 @@
 .prokerinfo > p {
 	color: white;
 	margin-top: 1em;
-	font-size: calc(var(--small-text) - 1px);
+	font-size: 18px;
 	font-weight: 300;
 }
 
@@ -111,5 +111,9 @@
 @media only screen and (max-width: 550px) {
 	.prokerlabel {
 		background: linear-gradient(270deg, #a62e2e 60%, rgba(189, 65, 43, 0));
+	}
+
+	.prokerinfo > p {
+		font-size: 14px;
 	}
 }
