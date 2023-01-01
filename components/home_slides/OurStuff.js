@@ -8,7 +8,7 @@ import Link from "next/link";
 
 function ProkerCard({ offset, img, title, description, link }) {
 	return (
-		<a href={link} target="_blank">
+		<a href={link} target="_blank" rel="noreferrer noopener">
 			<div className={styles.prokercard}>
 				<Image
 					src={img}
@@ -17,7 +17,6 @@ function ProkerCard({ offset, img, title, description, link }) {
 					style={{
 						transform: `translate(${offset})`,
 					}}
-					rel="noreferrer noopener"
 				/>
 
 				<div className={styles.prokerlabel}>
