@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "@styles/components/ImageCarousel.module.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 
-function customIndicator(onClickHandler, isSelected, index, label) {
+export function CustomIndicator({ onClickHandler, isSelected, index, label }) {
 	if (isSelected) {
 		return (
 			<li
@@ -28,7 +29,7 @@ function customIndicator(onClickHandler, isSelected, index, label) {
 	);
 }
 
-function customArrowPrev(onClickHandler, therePrevItem) {
+export function CustomArrowPrev({ onClickHandler, therePrevItem }) {
 	return (
 		<div className={styles.arrow} onClick={onClickHandler} id="left">
 			<AiFillCaretLeft />
@@ -36,7 +37,7 @@ function customArrowPrev(onClickHandler, therePrevItem) {
 	);
 }
 
-function customArrowNext(onClickHandler, thereNextItem) {
+export function CustomArrowNext({ onClickHandler, thereNextItem }) {
 	return (
 		<div className={styles.arrow} onClick={onClickHandler} id="right">
 			<AiFillCaretRight />
@@ -44,9 +45,10 @@ function customArrowNext(onClickHandler, thereNextItem) {
 	);
 }
 
-export default function ImageCarousel({ children, onChange }) {
+export default function ImageCarousel({ children, onChange, width }) {
 	return (
 		<Carousel
+			width={width}
 			infiniteLoop
 			stopOnHover
 			swipeable={false}
@@ -54,9 +56,20 @@ export default function ImageCarousel({ children, onChange }) {
 			showIndicators
 			showStatus={false}
 			onChange={onChange}
-			renderIndicator={customIndicator}
-			renderArrowPrev={customArrowPrev}
-			renderArrowNext={customArrowNext}>
+			renderIndicator={(onClickHandler, isSelected, index, label) => (
+				<CustomIndicator
+					onClickHandler={onClickHandler}
+					isSelected={isSelected}
+					index={index}
+					label={label}
+				/>
+			)}
+			renderArrowPrev={(onClickHandler) => (
+				<CustomArrowPrev onClickHandler={onClickHandler} />
+			)}
+			renderArrowNext={(onClickHandler) => (
+				<CustomArrowNext onClickHandler={onClickHandler} />
+			)}>
 			{children}
 		</Carousel>
 	);

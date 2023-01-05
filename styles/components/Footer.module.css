@@ -9,6 +9,13 @@
 	color: white;
 }
 
+.pageTransition {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
 .flexWrapper {
 	margin-top: 6em;
 	gap: 6em;

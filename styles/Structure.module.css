@@ -1,3 +1,123 @@
 .structurePage {
-	padding: var(--nav-height) 0;
+	padding-top: 1em;
+	background: linear-gradient(180deg, #bd412b 1.86%, #bf5b21 100%);
+	height: 100%;
+	width: 100%;
+
+	overflow: hidden;
+	--container-height: 80vh;
+}
+
+.carousel {
+	height: 100% !important;
+}
+
+.wrap {
+	margin-top: 20em;
+}
+
+.contentcontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4em;
+}
+
+.structurecontainer {
+	width: 80vw;
+	background-color: var(--primary);
+	box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.structurecontainer > h1 {
+	position: relative;
+	text-align: end;
+	right: 1em;
+	top: 1em;
+
+	color: var(--contrast);
+}
+
+.slides {
+	width: 80vw;
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1em;
+	justify-content: center;
+	padding: 1.25em;
+}
+
+.personCard {
+	background-color: var(--primary-shade-1);
+	box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.25);
+	width: 200px;
+	height: 300px;
+	padding: 1em 2em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	transition: 200ms ease-out;
+}
+
+.personCard:hover {
+	scale: 1.05;
+	box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.25);
+}
+
+.personCard h1 {
+	margin-top: 1.5em;
+	font-size: 16px;
+	color: var(--contrast);
+}
+
+.personCard p {
+	margin-top: 0.5em;
+	font-size: 12px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.personImage {
+	height: auto;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.personCardFooter {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	gap: 0.5em;
+	fill: var(--contrast);
+	opacity: 0.5;
+}
+
+.sekbidContainer {
+	position: relative;
+	left: 0;
+	padding-left: 10vw;
+	width: 100vw;
+	padding: 1.25em 10vw 1.25em 10vw;
+	display: flex;
+	gap: 6em;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none;
+}
+
+.sekbidContainer::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+@media only screen and (max-width: 1078px) {
 }
