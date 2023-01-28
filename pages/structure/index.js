@@ -50,7 +50,6 @@ import koordinatorhumas from "@public/foto-anggota/koordinator-humas.png";
 import sekretaris1 from "@public/foto-anggota/sekretaris-1.png";
 import sekretaris2 from "@public/foto-anggota/sekretaris-2.png";
 import sekretarisumum from "@public/foto-anggota/sekretaris-umum.png";
-
 function StructureCarousel({ title, children }) {
 	return (
 		<div className={styles.structurecontainer}>
