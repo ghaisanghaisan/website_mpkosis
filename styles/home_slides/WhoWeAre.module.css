@@ -40,9 +40,12 @@
 	--image-size: 345px;
 	width: var(--image-size);
 	height: var(--image-size);
+	position: relative;
+
+	object-fit: contain;
 
 	border-radius: 50%;
-	object-fit: cover;
+	background-color: var(--contrast);
 }
 
 .invitetext {

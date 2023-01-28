@@ -3,9 +3,9 @@ import styles from "@styles/home_slides/WhoWeAre.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-import ketuampk from "@public/foto-anggota/1.ketua-mpk/ketua-mpk-1.jpeg";
-import ketuaosis from "@public/foto-anggota/1.ketos-waketos/ketua-osis.jpg";
-import wakilketuaosis from "@public/foto-anggota/1.ketos-waketos/wakil-ketua-osis.jpg";
+import ketuampk from "@public/foto-anggota/ketua-osis.png";
+import ketuaosis from "@public/foto-anggota/ketua-osis.png";
+import wakilketuaosis from "@public/foto-anggota/ketua-osis.png";
 
 function PersonCard({ position, name, image }) {
 	return (

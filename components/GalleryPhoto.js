@@ -12,6 +12,7 @@ export default function GalleryPhoto({ img, link }) {
 					height="1080"
 					width="1920"
 					alt=""
+					unoptimized
 				/>
 			</a>
 		</div>

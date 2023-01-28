@@ -60,6 +60,10 @@ a {
 	line-height: 59px;
 }
 
+.control-dots {
+	pointer-events: none;
+}
+
 .colorPrimary {
 	color: var(--primary);
 }
@@ -75,6 +79,26 @@ a {
 	fill: var(--primary);
 	z-index: 0;
 	pointer-events: none;
+}
+
+.arrow:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider {
+	height: 100% !important;
+}
+
+.carousel .slider-wrapper {
+	height: 100% !important;
+}
+
+.carousel.carousel-slider {
+	height: 100% !important;
+}
+
+.carousel-root {
+	height: 100% !important ;
 }
 
 @media only screen and (max-width: 1280px) {
