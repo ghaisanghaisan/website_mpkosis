@@ -247,13 +247,13 @@ export default function StructurePage() {
 							<PersonCard
 								img={sekretaris1}
 								name="Walu Amadea Mozza"
-								position="Sekretaris I OSIS"
+								position="Sekretaris I"
 								links={["www.instagram.com/danishghaisan_"]}
 							/>
 							<PersonCard
 								img={sekretaris2}
 								name="Maylafazya Suryadikarta"
-								position="Sekretaris II OSIS"
+								position="Sekretaris II"
 								links={["www.instagram.com/danishghaisan_"]}
 							/>
 						</div>
@@ -281,19 +281,19 @@ export default function StructurePage() {
 							<PersonCard
 								img={humas1}
 								name="Ramelya Ramdany"
-								position="Humas I"
+								position="Anggota Humas"
 								links={["www.instagram.com/danishghaisan_"]}
 							/>
 							<PersonCard
 								img={humas2}
 								name=" Adinda Naura Adhyaksari"
-								position="Humas II"
+								position="Anggota Humas"
 								links={["www.instagram.com/danishghaisan_"]}
 							/>
 							<PersonCard
 								img={humas3}
 								name="Muhammad Ra’fi Za’dan"
-								position="Humas III"
+								position="Anggota Humas"
 								links={["www.instagram.com/danishghaisan_"]}
 							/>
 						</div>
