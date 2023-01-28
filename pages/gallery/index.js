@@ -6,7 +6,7 @@ export default function GalleryPage() {
 	const [galleryPhotos, setgalleryPhotos] = useState([]);
 
 	useEffect(() => {
-		fetch("/api/galleryview")
+		fetch("/api/galleryview", { photosNum: 100 })
 			.then((res) => res.json())
 			.then((data) => setgalleryPhotos(data.files));
 	}, []);

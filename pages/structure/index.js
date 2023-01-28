@@ -64,20 +64,24 @@ function PersonCard({ img, name, position, links }) {
 	return (
 		<div className={styles.personCard}>
 			<div>
-				<Image src={img} className={styles.personImage} />
+				<Image
+					src={img}
+					className={styles.personImage}
+					alt={`image of ${name}`}
+				/>
 				<div className={styles.personInfo}>
 					<h1>{name}</h1>
 					<p>{position}</p>
 				</div>
 			</div>
-			<div className={styles.personCardFooter}>
+			{/* <div className={styles.personCardFooter}>
 				{links &&
 					links.map((link) => (
 						<a href={link.url} target="_blank" rel="noreferrer noopener">
 							{link.icon}
 						</a>
 					))}
-			</div>
+			</div> */}
 		</div>
 	);
 }

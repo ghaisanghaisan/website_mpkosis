@@ -29,7 +29,7 @@ function Contacts() {
 				/>
 				<div className={styles.contactinfo}>
 					<div>CP: Ra&apos;fi Za&apos;dan </div>
-					<div>ID:</div>
+					<div>ID: iniartzywoi</div>
 				</div>
 			</div>
 			<div className={styles.contactcard}>

@@ -9,10 +9,11 @@ const auth = new google.auth.JWT(
 const drive = google.drive({ version: "v3", auth });
 
 export default function handler(request, response) {
+	console.log(request);
 	drive.files.list(
 		{
 			fields: "files(id, name, thumbnailLink, mimeType, webViewLink)",
-			pageSize: "50",
+			pageSize: request.body.photosNum,
 		},
 		(err, res) => {
 			if (err) throw err;
