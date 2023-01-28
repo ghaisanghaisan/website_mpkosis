@@ -3,9 +3,11 @@ import styles from "@styles/home_slides/WhoWeAre.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-import ketuampk from "@public/foto-anggota/ketua-osis.png";
+import ketuampk from "@public/foto-anggota/ketua-mpk.png";
 import ketuaosis from "@public/foto-anggota/ketua-osis.png";
 import wakilketuaosis from "@public/foto-anggota/ketua-osis.png";
+
+import p from "@public/transparent.png";
 
 function PersonCard({ position, name, image }) {
 	return (
@@ -34,7 +36,7 @@ export default function WhoWeAre() {
 						<PersonCard
 							position="WAKIL KETUA OSIS"
 							name="Jossy Zefanya"
-							image={wakilketuaosis}
+							image={p}
 						/>
 						<PersonCard
 							position="KETUA MPK"

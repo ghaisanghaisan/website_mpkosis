@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@styles/Structure.module.css";
 import ImageCarousel from "@components/ImageCarousel";
 import Image from "next/image";
-import p from "@public/foto-anggota/anggota-sekbid-ix-1.png";
+import p from "@public/transparent.png";
 import InstagramIcon from "@public/svg/instagramicon.svg";
 import Footer from "@components/Footer";
 
@@ -50,6 +50,21 @@ import koordinatorhumas from "@public/foto-anggota/koordinator-humas.png";
 import sekretaris1 from "@public/foto-anggota/sekretaris-1.png";
 import sekretaris2 from "@public/foto-anggota/sekretaris-2.png";
 import sekretarisumum from "@public/foto-anggota/sekretaris-umum.png";
+
+import anggotakomisia1 from "@public/foto-anggota/anggota-komisi-a-1.png";
+import anggotakomisia2 from "@public/foto-anggota/anggota-komisi-a-2.png";
+import anggotakomisib1 from "@public/foto-anggota/anggota-komisi-b-1.png";
+import anggotakomisib2 from "@public/foto-anggota/anggota-komisi-b-2.png";
+import anggotakomisib3 from "@public/foto-anggota/anggota-komisi-b-3.png";
+import anggotakomisic1 from "@public/foto-anggota/anggota-komisi-c-1.png";
+import anggotakomisic2 from "@public/foto-anggota/anggota-komisi-c-2.png";
+import ketuakomisia from "@public/foto-anggota/ketua-komisi-a.png";
+import ketuakomisib from "@public/foto-anggota/ketua-komisi-b.png";
+import ketuakomisic from "@public/foto-anggota/ketua-komisi-c.png";
+import ketuampk from "@public/foto-anggota/ketua-mpk.png";
+import sekretarismpk1 from "@public/foto-anggota/sekretaris-mpk-1.png";
+import sekretarismpk2 from "@public/foto-anggota/sekretaris-mpk-2.png";
+
 function StructureCarousel({ title, children }) {
 	return (
 		<div className={styles.structurecontainer}>
@@ -90,13 +105,13 @@ export default function StructurePage() {
 		<div className={styles.structurePage}>
 			<div className="container">
 				<div className={styles.contentcontainer}>
-					{/* <h1 className="title ">Struktur MPK</h1>
-					<StructureCarousel title="MPK">
+					<h1 className="title ">Struktur MPK</h1>
+					<StructureCarousel title="BPH">
 						<div className={styles.slides}>
 							<PersonCard
-								img={p}
+								img={ketuampk}
 								name="Anastasia Syifa Abigeil"
-								position="Ketua MPK"
+								position="Ketua Umum"
 								links={[
 									{
 										icon: <InstagramIcon />,
@@ -108,9 +123,9 @@ export default function StructurePage() {
 
 						<div className={styles.slides}>
 							<PersonCard
-								img={p}
+								img={sekretarismpk1}
 								name="Kayla Alima Fatin"
-								position="Sekretaris I MPK"
+								position="Sekretaris I"
 								links={[
 									{
 										icon: <InstagramIcon />,
@@ -119,9 +134,9 @@ export default function StructurePage() {
 								]}
 							/>
 							<PersonCard
-								img={p}
+								img={sekretarismpk2}
 								name="Safa Nailatul Izzah"
-								position="Sekretaris II MPK"
+								position="Sekretaris II"
 								links={[
 									{
 										icon: <InstagramIcon />,
@@ -135,155 +150,90 @@ export default function StructurePage() {
 						<StructureCarousel title="Komisi A">
 							<div className={styles.slides}>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={ketuakomisia}
+									name="Fabnejla Aaliyah Ibradiputri"
+									position="Ketua Komisi A"
 								/>
 							</div>
 							<div className={styles.slides}>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={anggotakomisia1}
+									name="Saskia Adya Auranisaa"
+									position="Anggota Komisi A"
 								/>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={anggotakomisia2}
+									name="Steven Anthony Suhartoyo"
+									position="Anggota Komisi A"
 								/>
 							</div>
 						</StructureCarousel>
 						<StructureCarousel title="Komisi B">
 							<div className={styles.slides}>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={ketuakomisib}
+									name="Baskoro Suryo Wibowo"
+									position="Anggota Komisi B"
 								/>
 							</div>
 							<div className={styles.slides}>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={anggotakomisib1}
+									name="Daniel Christian Toro"
+									position="Anggota Komisi B"
 								/>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={anggotakomisib2}
+									name="Ardeshir Hammurabi Shalmaneser"
+									position="Anggota Komisi B"
 								/>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={anggotakomisib3}
+									name="Trisha Calista Siahaan"
+									position="Anggota Komisi B"
 								/>
 							</div>
 						</StructureCarousel>
 						<StructureCarousel title="Komisi C">
 							<div className={styles.slides}>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={ketuakomisic}
+									name="Muhammad Dzaky Bahrul Ilmi"
+									position="Ketua Komisi C"
 								/>
 							</div>
 							<div className={styles.slides}>
 								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									img={anggotakomisic1}
+									name="Wilda Yulianti"
+									position="Anggota Komisi C"
+								/>
+								<PersonCard
+									img={anggotakomisic2}
+									name="Naysilla Namira"
+									position="Anggota Komisi C"
 								/>
 								<PersonCard
 									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
-								/>
-								<PersonCard
-									img={p}
-									name="Danish Ghaisan Putera Ahmadi"
-									position="Anggota Sekbid IX"
+									name="Raisa Ramadhani"
+									position="Anggota Komisi C"
 								/>
 							</div>
 						</StructureCarousel>
-					</div> */}
+					</div>
 					<h1 className="title ">Struktur OSIS</h1>
 					<StructureCarousel title="BPH">
 						<div className={styles.slides}>
 							<PersonCard
 								img={ketuaosis}
 								name="Muhammad Akio Zaiko"
-								position="Ketua Umum Osis"
+								position="Ketua Umum"
 								links={["www.instagram.com/danishghaisan_"]}
 							/>
 							<PersonCard
 								img={p}
 								name="Jossy Zefanya"
-								position="Wakil Ketua Umum Osis"
+								position="Wakil Ketua"
 								links={["www.instagram.com/danishghaisan_"]}
 							/>
 						</div>
@@ -376,7 +326,7 @@ export default function StructurePage() {
 			<StructureCarousel title="Sekbid X">
 				<div className={styles.slides}>
 					<PersonCard
-						img={anggotasekbidix1}
+						img={p}
 						name="Karen Iliana Lumban Tobing"
 						position="Ketua Sekbid X"
 					/>
