@@ -6,6 +6,7 @@ import p from "@public/transparent.png";
 import InstagramIcon from "@public/svg/instagramicon.svg";
 import Footer from "@components/Footer";
 
+import wakilketuaosis from "@public/foto-anggota/wakil-ketua-osis.png";
 import anggotasekbidi1 from "@public/foto-anggota/anggota-sekbid-i-1.png";
 import anggotasekbidi2 from "@public/foto-anggota/anggota-sekbid-i-2.png";
 import anggotasekbidi3 from "@public/foto-anggota/anggota-sekbid-i-3.png";
@@ -31,6 +32,7 @@ import anggotasekbidviii1 from "@public/foto-anggota/anggota-sekbid-viii-1.png";
 import anggotasekbidviii2 from "@public/foto-anggota/anggota-sekbid-viii-2.png";
 import anggotasekbidx1 from "@public/foto-anggota/anggota-sekbid-x-1.png";
 import anggotasekbidx2 from "@public/foto-anggota/anggota-sekbid-x-2.png";
+
 import bendahara1 from "@public/foto-anggota/bendahara-1.png";
 import bendahara2 from "@public/foto-anggota/bendahara-2.png";
 import humas1 from "@public/foto-anggota/humas-1.png";
@@ -46,6 +48,7 @@ import ketuasekbidv from "@public/foto-anggota/ketua-sekbid-v.png";
 import ketuasekbidvi from "@public/foto-anggota/ketua-sekbid-vi.png";
 import ketuasekbidvii from "@public/foto-anggota/ketua-sekbid-vii.png";
 import ketuasekbidviii from "@public/foto-anggota/ketua-sekbid-viii.png";
+import ketuasekbidx from "@public/foto-anggota/ketua-sekbid-x.png";
 import koordinatorhumas from "@public/foto-anggota/koordinator-humas.png";
 import sekretaris1 from "@public/foto-anggota/sekretaris-1.png";
 import sekretaris2 from "@public/foto-anggota/sekretaris-2.png";
@@ -74,9 +77,9 @@ function StructureCarousel({ title, children }) {
 	);
 }
 
-function PersonCard({ img, name, position, links }) {
+function PersonCard({ img, name, position, links, id, eg }) {
 	return (
-		<div className={styles.personCard}>
+		<div className={[styles.personCard, eg].join(" ")} id={id}>
 			<div>
 				<Image
 					src={img}
@@ -231,7 +234,7 @@ export default function StructurePage() {
 								links={["www.instagram.com/danishghaisan_"]}
 							/>
 							<PersonCard
-								img={p}
+								img={wakilketuaosis}
 								name="Jossy Zefanya"
 								position="Wakil Ketua"
 								links={["www.instagram.com/danishghaisan_"]}
@@ -326,7 +329,7 @@ export default function StructurePage() {
 			<StructureCarousel title="Sekbid X">
 				<div className={styles.slides}>
 					<PersonCard
-						img={p}
+						img={ketuasekbidx}
 						name="Karen Iliana Lumban Tobing"
 						position="Ketua Sekbid X"
 					/>
@@ -352,6 +355,7 @@ export default function StructurePage() {
 			<StructureCarousel title="Sekbid IX">
 				<div className={styles.slides}>
 					<PersonCard
+						eg={styles.nine}
 						img={ketuasekbidix}
 						name="Dinda Selomitha"
 						position="Ketua Sekbid IX"
@@ -359,6 +363,8 @@ export default function StructurePage() {
 				</div>
 				<div className={styles.slides}>
 					<PersonCard
+						id={styles.danish}
+						eg={styles.nine}
 						img={anggotasekbidix1}
 						name="Danish Ghaisan Putera Ahmadi"
 						position="Anggota Sekbid IX"
@@ -370,16 +376,19 @@ export default function StructurePage() {
 						]}
 					/>
 					<PersonCard
+						eg={styles.nine}
 						img={anggotasekbidix1}
 						name="Muhammad Alfiansyah"
 						position="Anggota Sekbid IX"
 					/>
 					<PersonCard
+						eg={styles.nine}
 						img={anggotasekbidix3}
 						name="Shazia Nandyta Lituhayu"
 						position="Anggota Sekbid IX"
 					/>
 					<PersonCard
+						eg={styles.nine}
 						img={anggotasekbidix2}
 						name="Najmu Syakieb"
 						position="Anggota Sekbid IX"

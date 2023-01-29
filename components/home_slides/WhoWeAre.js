@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import ketuampk from "@public/foto-anggota/ketua-mpk.png";
 import ketuaosis from "@public/foto-anggota/ketua-osis.png";
-import wakilketuaosis from "@public/foto-anggota/ketua-osis.png";
+import wakilketuaosis from "@public/foto-anggota/wakil-ketua-osis.png";
 
 import p from "@public/transparent.png";
 
@@ -36,7 +36,7 @@ export default function WhoWeAre() {
 						<PersonCard
 							position="WAKIL KETUA OSIS"
 							name="Jossy Zefanya"
-							image={p}
+							image={wakilketuaosis}
 						/>
 						<PersonCard
 							position="KETUA MPK"
