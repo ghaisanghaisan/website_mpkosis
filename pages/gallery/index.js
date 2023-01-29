@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "@styles/Gallery.module.css";
 import GalleryPhoto from "@components/GalleryPhoto";
+import Head from "next/head";
 
 export default function GalleryPage() {
 	const [galleryPhotos, setgalleryPhotos] = useState([]);
@@ -13,6 +14,13 @@ export default function GalleryPage() {
 
 	return (
 		<div className={styles.galleryPage}>
+			<Head>
+				<title>MPK OSIS 55 - Galeri</title>
+				<meta
+					name="description"
+					content="Galeri Foto Program Program Kerja lalu MPK/OSIS di SMAN 55 Jakarta"
+				/>
+			</Head>
 			<div className="container">
 				<h1 className="title colorPrimary">Galeri Kami</h1>
 				<div className={styles.photoContainer}>

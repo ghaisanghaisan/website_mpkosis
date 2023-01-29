@@ -5,6 +5,7 @@ import Image from "next/image";
 import p from "@public/transparent.png";
 import InstagramIcon from "@public/svg/instagramicon.svg";
 import Footer from "@components/Footer";
+import Head from "next/head";
 
 import wakilketuaosis from "@public/foto-anggota/wakil-ketua-osis.png";
 import anggotasekbidi1 from "@public/foto-anggota/anggota-sekbid-i-1.png";
@@ -106,6 +107,13 @@ function PersonCard({ img, name, position, links, id, eg }) {
 export default function StructurePage() {
 	return (
 		<div className={styles.structurePage}>
+			<Head>
+				<title>MPK OSIS 55 - Struktur</title>
+				<meta
+					name="description"
+					content="Struktur Keanggotaan MPK/OSIS di SMAN 55 Jakarta tahun 2022/2023"
+				/>
+			</Head>
 			<div className="container">
 				<div className={styles.contentcontainer}>
 					<h1 className="title ">Struktur MPK</h1>

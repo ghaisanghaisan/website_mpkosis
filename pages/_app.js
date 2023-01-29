@@ -20,18 +20,18 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Navbar>
-				<li>
-					<Link href="/">Home</Link>
-				</li>
+				<Link href="/">
+					<li>Home</li>
+				</Link>
 				{/* <li>
 					<Link href="/articles/">Artikel</Link>
 				</li> */}
-				<li>
-					<Link href="/gallery/">Galeri</Link>
-				</li>
-				<li>
-					<Link href="/structure/">Struktur</Link>
-				</li>
+				<Link href="/gallery/">
+					<li>Galeri</li>
+				</Link>
+				<Link href="/structure/">
+					<li>Struktur</li>
+				</Link>
 				{/* <li>
 					<Link href="/calender/">Kalender</Link>
 				</li> */}

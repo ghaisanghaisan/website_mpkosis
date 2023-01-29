@@ -127,6 +127,20 @@
 	gap: 3em;
 	overflow-y: hidden;
 	overflow-x: scroll;
+
+	scrollbar-width: thin;
+	scrollbar-track-color: var(--primary-shade-3);
+	scrollbar-color: var(--contrast) var(--primary-shade-3);
+}
+
+.sekbidContainer::-webkit-scrollbar {
+	background-color: var(--primary-shade-3);
+	width: 4px;
+}
+
+.sekbidContainer::-webkit-scrollbar-thumb {
+	background-color: var(--contrast);
+	border-radius: 12px;
 }
 
 .personCard.nine {
