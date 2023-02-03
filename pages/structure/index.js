@@ -8,6 +8,8 @@ import Footer from "@components/Footer";
 import Head from "next/head";
 
 import wakilketuaosis from "@public/foto-anggota/wakil-ketua-osis.png";
+import anggotasekbidix4 from "@public/foto-anggota/anggota-sekbid-ix-4.png";
+import anggotakomisic3 from "@public/foto-anggota/anggota-komisi-c-3.png";
 import anggotasekbidi1 from "@public/foto-anggota/anggota-sekbid-i-1.png";
 import anggotasekbidi2 from "@public/foto-anggota/anggota-sekbid-i-2.png";
 import anggotasekbidi3 from "@public/foto-anggota/anggota-sekbid-i-3.png";
@@ -225,7 +227,7 @@ export default function StructurePage() {
 									position="Anggota Komisi C"
 								/>
 								<PersonCard
-									img={p}
+									img={anggotakomisic3}
 									name="Raisa Ramadhani"
 									position="Anggota Komisi C"
 								/>
@@ -385,7 +387,7 @@ export default function StructurePage() {
 					/>
 					<PersonCard
 						eg={styles.nine}
-						img={anggotasekbidix1}
+						img={anggotasekbidix4}
 						name="Muhammad Alfiansyah"
 						position="Anggota Sekbid IX"
 					/>
