@@ -186,7 +186,7 @@ export default function StructurePage() {
 								<PersonCard
 									img={ketuakomisib}
 									name="Baskoro Suryo Wibowo"
-									position="Anggota Komisi B"
+									position="Ketua Komisi B"
 								/>
 							</div>
 							<div className={styles.slides}>

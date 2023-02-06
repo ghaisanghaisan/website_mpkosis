@@ -72,8 +72,8 @@
 	color: white;
 }
 
-.open {
-	display: flex;
+#open {
+	transform: translateX(0);
 }
 
 .closebtn {
@@ -133,6 +133,10 @@
 
 	.closebtn {
 		display: block;
+	}
+
+	#open {
+		transform: translateX(-100%);
 	}
 
 	.navlinks > h1 {

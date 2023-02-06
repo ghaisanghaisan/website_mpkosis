@@ -24,11 +24,7 @@ export default function Navbar({ children }) {
 						/>
 					</Link>
 					<div className={styles.togglemenu}>
-						<ul
-							className={` ${styles.navlinks}`}
-							style={{
-								transform: open ? "translate(-100%)" : "translate(0)",
-							}}>
+						<ul className={` ${styles.navlinks}`} id={open ? styles.open : ""}>
 							<MdClose className={styles.closebtn} onClick={handleClick} />
 							<h1>MPK OSIS 55</h1>
 

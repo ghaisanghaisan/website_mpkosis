@@ -51,8 +51,7 @@ export default function GalleryPage() {
 						loader={<PlaceholderGalleryPhotos />}
 						endMessage={
 							<p style={{ textAlign: "center" }}>
-								              <b>Yay! You have seen it all</b>
-								            
+								<b>Yay! You have seen it all</b>
 							</p>
 						}>
 						{galleryPhotos.map((photo, index) => {
