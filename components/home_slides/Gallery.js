@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "@styles/home_slides/Gallery.module.css";
 import Link from "next/link";
-import GalleryPhoto from "@components/GalleryPhoto";
+import GalleryPhoto, {
+	PlaceholderGalleryPhotos,
+} from "@components/GalleryPhoto";
 
 export default function Gallery({ galleryPhotos }) {
 	return (
@@ -13,22 +15,26 @@ export default function Gallery({ galleryPhotos }) {
 						<Link href="/gallery/">See All...</Link>
 					</div>
 					<div className={styles.flexgrid}>
-						{galleryPhotos.map((photo, index) => {
-							if (
-								index >= 24 ||
-								!photo.thumbnailLink ||
-								photo.mimeType === "application/vnd.google-apps.folder"
-							) {
-								return;
-							}
-							return (
-								<GalleryPhoto
-									key={photo.id}
-									img={photo.thumbnailLink}
-									link={photo.webViewLink}
-								/>
-							);
-						})}
+						{galleryPhotos.length > 0 ? (
+							galleryPhotos.map((photo, index) => {
+								if (
+									index >= 24 ||
+									!photo.thumbnailLink ||
+									photo.mimeType === "application/vnd.google-apps.folder"
+								) {
+									return;
+								}
+								return (
+									<GalleryPhoto
+										key={photo.id}
+										img={photo.thumbnailLink}
+										link={photo.webViewLink}
+									/>
+								);
+							})
+						) : (
+							<PlaceholderGalleryPhotos />
+						)}
 					</div>
 				</div>
 				<div className={styles.shadowUp}>&nbsp;</div>

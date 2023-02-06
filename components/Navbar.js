@@ -32,7 +32,18 @@ export default function Navbar({ children }) {
 							<MdClose className={styles.closebtn} onClick={handleClick} />
 							<h1>MPK OSIS 55</h1>
 
-							{children}
+							<Link href="/" onClick={handleClick}>
+								<li>Home</li>
+							</Link>
+							{/* <li>
+					<Link href="/articles/">Artikel</Link>
+				</li> */}
+							<Link href="/gallery/" onClick={handleClick}>
+								<li>Galeri</li>
+							</Link>
+							<Link href="/structure/" onClick={handleClick}>
+								<li>Struktur</li>
+							</Link>
 						</ul>
 						<MdMenu className={styles.menuicon} onClick={handleClick} />
 					</div>

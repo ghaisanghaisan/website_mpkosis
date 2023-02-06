@@ -50,7 +50,10 @@ export default function Home({ articles, heroArticles }) {
 	useEffect(() => {
 		fetch("/api/galleryview")
 			.then((res) => res.json())
-			.then((data) => setgalleryPhotos(data.files));
+			.then((parsedResponse) => {
+				let data = parsedResponse.res.data;
+				setgalleryPhotos(data.files);
+			});
 	}, []);
 
 	return (

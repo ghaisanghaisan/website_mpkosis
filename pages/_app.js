@@ -19,23 +19,8 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
-			<Navbar>
-				<Link href="/">
-					<li>Home</li>
-				</Link>
-				{/* <li>
-					<Link href="/articles/">Artikel</Link>
-				</li> */}
-				<Link href="/gallery/">
-					<li>Galeri</li>
-				</Link>
-				<Link href="/structure/">
-					<li>Struktur</li>
-				</Link>
-				{/* <li>
-					<Link href="/calender/">Kalender</Link>
-				</li> */}
-			</Navbar>
+			<Navbar />
+
 			<Component {...pageProps} />
 		</>
 	);
