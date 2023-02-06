@@ -6,7 +6,7 @@ export function PlaceholderGalleryPhotos() {
 	return (
 		<>
 			{[...Array(24)].map((x, i) => (
-				<GalleryPhoto />
+				<GalleryPhoto key={i} />
 			))}
 		</>
 	);
