@@ -71,10 +71,25 @@ import ketuampk from "@public/foto-anggota/ketua-mpk.png";
 import sekretarismpk1 from "@public/foto-anggota/sekretaris-mpk-1.png";
 import sekretarismpk2 from "@public/foto-anggota/sekretaris-mpk-2.png";
 
-function StructureCarousel({ title, children }) {
+import sekbidi from "@public/lambang-sekbid/sekbid-i.PNG";
+import sekbidii from "@public/lambang-sekbid/sekbid-ii.PNG";
+import sekbidiii from "@public/lambang-sekbid/sekbid-iii.PNG";
+import sekbidiv from "@public/lambang-sekbid/sekbid-iv.PNG";
+import sekbidix from "@public/lambang-sekbid/sekbid-ix.PNG";
+import sekbidv from "@public/lambang-sekbid/sekbid-v.PNG";
+import sekbidvi from "@public/lambang-sekbid/sekbid-vi.PNG";
+import sekbidvii from "@public/lambang-sekbid/sekbid-vii.PNG";
+import sekbidviii from "@public/lambang-sekbid/sekbid-viii.PNG";
+import sekbidx from "@public/lambang-sekbid/sekbid-x.PNG";
+
+function StructureCarousel({ title, children, lambangsekbid }) {
 	return (
 		<div className={styles.structurecontainer}>
 			<h1>{title}</h1>
+			{lambangsekbid && (
+				<Image src={lambangsekbid} className={styles.sekbidlambang} />
+			)}
+
 			<ImageCarousel>{children}</ImageCarousel>
 		</div>
 	);
@@ -119,11 +134,12 @@ export default function StructurePage() {
 			<div className="container">
 				<div className={styles.contentcontainer}>
 					<h1 className="title ">Struktur MPK</h1>
+
 					<StructureCarousel title="BPH">
 						<div className={styles.slides}>
 							<PersonCard
 								img={ketuampk}
-								name="Anastasia Syifa Abigeil"
+								name="Anastasia Shifa Abigeil"
 								position="Ketua Umum"
 								links={[
 									{
@@ -336,7 +352,7 @@ export default function StructurePage() {
 
 	function SekbidX() {
 		return (
-			<StructureCarousel title="Sekbid X">
+			<StructureCarousel title="Sekbid X" lambangsekbid={sekbidx}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidx}
@@ -362,7 +378,7 @@ export default function StructurePage() {
 
 	function SekbidIX() {
 		return (
-			<StructureCarousel title="Sekbid IX">
+			<StructureCarousel title="Sekbid IX" lambangsekbid={sekbidix}>
 				<div className={styles.slides}>
 					<PersonCard
 						eg={styles.nine}
@@ -410,7 +426,7 @@ export default function StructurePage() {
 
 	function SekbidVIII() {
 		return (
-			<StructureCarousel title="Sekbid VIII">
+			<StructureCarousel title="Sekbid VIII" lambangsekbid={sekbidviii}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidviii}
@@ -436,7 +452,7 @@ export default function StructurePage() {
 
 	function SekbidVII() {
 		return (
-			<StructureCarousel title="Sekbid VII">
+			<StructureCarousel title="Sekbid VII" lambangsekbid={sekbidvii}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidvii}
@@ -467,7 +483,7 @@ export default function StructurePage() {
 
 	function SekbidVI() {
 		return (
-			<StructureCarousel title="Sekbid VI">
+			<StructureCarousel title="Sekbid VI" lambangsekbid={sekbidvi}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidvi}
@@ -493,7 +509,7 @@ export default function StructurePage() {
 
 	function SekbidV() {
 		return (
-			<StructureCarousel title="Sekbid V">
+			<StructureCarousel title="Sekbid V" lambangsekbid={sekbidv}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidv}
@@ -519,7 +535,7 @@ export default function StructurePage() {
 
 	function SekbidIV() {
 		return (
-			<StructureCarousel title="Sekbid IV">
+			<StructureCarousel title="Sekbid IV" lambangsekbid={sekbidiv}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidiv}
@@ -550,7 +566,7 @@ export default function StructurePage() {
 
 	function SekbidIII() {
 		return (
-			<StructureCarousel title="Sekbid III">
+			<StructureCarousel title="Sekbid III" lambangsekbid={sekbidiii}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidiii}
@@ -576,7 +592,7 @@ export default function StructurePage() {
 
 	function SekbidII() {
 		return (
-			<StructureCarousel title="Sekbid II">
+			<StructureCarousel title="Sekbid II" lambangsekbid={sekbidvii}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidii}
@@ -631,7 +647,7 @@ export default function StructurePage() {
 
 	function SekbidI() {
 		return (
-			<StructureCarousel title="Sekbid I">
+			<StructureCarousel title="Sekbid I" lambangsekbid={sekbidi}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidi}

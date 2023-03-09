@@ -31,6 +31,9 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2em;
+
+	position: relative;
+	overflow: clip;
 }
 
 .structurecontainer > h1 {
@@ -143,6 +146,15 @@
 	border-radius: 12px;
 }
 
+.sekbidlambang {
+	height: auto;
+	width: 50%;
+	position: absolute;
+	rotate: 15deg;
+	filter: opacity(0.15);
+	mix-blend-mode: multiply;
+}
+
 .personCard.nine {
 	position: relative;
 	/* display: block; */
@@ -249,7 +261,18 @@
 	}
 }
 
+@media only screen and (max-width: 1078px) {
+	.sekbidlambang {
+		height: 100%;
+		width: auto;
+	}
+}
+
 @media only screen and (max-width: 630px) {
+	.sekbidlambang {
+		rotate: 0deg;
+		left: -3em;
+	}
 	.personCard {
 		height: 240px;
 		width: 160px;

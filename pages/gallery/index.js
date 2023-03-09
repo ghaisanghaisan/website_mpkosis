@@ -43,6 +43,11 @@ export default function GalleryPage() {
 			<div className="container">
 				<h1 className="title colorPrimary">Galeri Kami</h1>
 				<div>
+					{galleryPhotos.length == 0 && (
+						<div className={styles.photoContainer}>
+							<PlaceholderGalleryPhotos />
+						</div>
+					)}
 					<InfiniteScroll
 						className={styles.photoContainer}
 						dataLength={galleryPhotos.length}

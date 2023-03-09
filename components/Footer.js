@@ -39,7 +39,7 @@ function Contacts() {
 					alt="logo of the app line"
 				/>
 				<div className={styles.contactinfo}>
-					<div>CP: Ramelya Ramadany </div>
+					<div>CP: Ramelya Ramdany </div>
 					<div>ID: ramelyes</div>
 				</div>
 			</div>
