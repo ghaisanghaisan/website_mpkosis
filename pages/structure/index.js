@@ -71,16 +71,16 @@ import ketuampk from "@public/foto-anggota/ketua-mpk.png";
 import sekretarismpk1 from "@public/foto-anggota/sekretaris-mpk-1.png";
 import sekretarismpk2 from "@public/foto-anggota/sekretaris-mpk-2.png";
 
-import sekbidi from "@public/lambang-sekbid/sekbid-i.PNG";
-import sekbidii from "@public/lambang-sekbid/sekbid-ii.PNG";
-import sekbidiii from "@public/lambang-sekbid/sekbid-iii.PNG";
-import sekbidiv from "@public/lambang-sekbid/sekbid-iv.PNG";
-import sekbidix from "@public/lambang-sekbid/sekbid-ix.PNG";
-import sekbidv from "@public/lambang-sekbid/sekbid-v.PNG";
-import sekbidvi from "@public/lambang-sekbid/sekbid-vi.PNG";
-import sekbidvii from "@public/lambang-sekbid/sekbid-vii.PNG";
-import sekbidviii from "@public/lambang-sekbid/sekbid-viii.PNG";
-import sekbidx from "@public/lambang-sekbid/sekbid-x.PNG";
+import sekbidi from "@public/lambang-sekbid/sekbid-i.png";
+import sekbidii from "@public/lambang-sekbid/sekbid-ii.png";
+import sekbidiii from "@public/lambang-sekbid/sekbid-iii.png";
+import sekbidiv from "@public/lambang-sekbid/sekbid-iv.png";
+import sekbidix from "@public/lambang-sekbid/sekbid-ix.png";
+import sekbidv from "@public/lambang-sekbid/sekbid-v.png";
+import sekbidvi from "@public/lambang-sekbid/sekbid-vi.png";
+import sekbidvii from "@public/lambang-sekbid/sekbid-vii.png";
+import sekbidviii from "@public/lambang-sekbid/sekbid-viii.png";
+import sekbidx from "@public/lambang-sekbid/sekbid-x.png";
 
 function StructureCarousel({ title, children, lambangsekbid }) {
 	return (
@@ -592,7 +592,7 @@ export default function StructurePage() {
 
 	function SekbidII() {
 		return (
-			<StructureCarousel title="Sekbid II" lambangsekbid={sekbidvii}>
+			<StructureCarousel title="Sekbid II" lambangsekbid={sekbidii}>
 				<div className={styles.slides}>
 					<PersonCard
 						img={ketuasekbidii}
