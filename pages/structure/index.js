@@ -86,9 +86,11 @@ function StructureCarousel({ title, children, lambangsekbid }) {
 	return (
 		<div className={styles.structurecontainer}>
 			<h1>{title}</h1>
-			{lambangsekbid && (
-				<Image src={lambangsekbid} className={styles.sekbidlambang} />
-			)}
+			<div className={styles.lambangWrapper}>
+				{lambangsekbid && (
+					<Image src={lambangsekbid} className={styles.sekbidlambang} />
+				)}
+			</div>
 
 			<ImageCarousel>{children}</ImageCarousel>
 		</div>
