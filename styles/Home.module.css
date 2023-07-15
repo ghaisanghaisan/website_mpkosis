@@ -29,6 +29,10 @@
 	align-items: center;
 }
 
+.ModalHeader > h1 {
+	font-size: var(--large-text);
+}
+
 .closebtn {
 	position: absolute;
 	left: 1em;
@@ -43,6 +47,8 @@
 	display: flex;
 	height: 80%;
 	width: 100%;
+
+	background-color: red;
 
 	justify-content: center;
 }
@@ -101,11 +107,20 @@
 }
 
 @media only screen and (max-width: 680px) {
+	.Modal {
+		padding: 2em 2em;
+	}
+
+	.ModalBody {
+		height: 60%;
+		margin-top: 1em;
+	}
+
 	.ModalBody > div:nth-child(1) > img {
 		left: -12em;
 	}
 
-	.ModalBody > div:nth-child(2) {
-		height: 80%;
+	.joinbtn {
+		height: 40px;
 	}
 }
