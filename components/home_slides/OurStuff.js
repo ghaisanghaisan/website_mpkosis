@@ -3,6 +3,7 @@ import styles from "@styles/home_slides/OurStuff.module.css";
 import logo55fm from "@public/Logo 55FM.jpg";
 import logoIG from "@public/logoIG.png";
 import logoYoutube from "@public/logoYoutube.png";
+import logoSCP from "@public/LOGOSCP.png";
 import Image from "next/image";
 
 function ProkerCard({ offset, img, title, description, link }) {
@@ -38,6 +39,12 @@ export default function OurStuff() {
 
 					<div className={styles.prokercontainer}>
 						<ProkerCard
+							img={logoSCP}
+							title="SCOPELLA"
+							description="Daftar lomba SCOPELLA sekarang juga!"
+							link="https://forms.gle/5CkQMbXVCbD37C1o6"
+						/>
+						<ProkerCard
 							img={logo55fm}
 							title="55FM"
 							description="Podcastnya anak anak Petrol. Konten penuh edukasi dan juga canda tawa!"
@@ -55,9 +62,6 @@ export default function OurStuff() {
 							description="Channel Youtube official MPK OSIS dari SMAN 55 Jakarta."
 							link="https://www.youtube.com/@MPKOSISSMAN55Jakarta"
 						/>
-						<div className={styles.placeholder}>
-							<h1>COMING SOON !</h1>
-						</div>
 					</div>
 				</div>
 			</div>
